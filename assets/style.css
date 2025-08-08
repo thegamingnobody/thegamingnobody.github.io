@@ -56,8 +56,8 @@
 
 .mainContent .project{
     background-color: aqua;
-    width: 15rem;
-    height: 15rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 10px;
     display: block;
 }
