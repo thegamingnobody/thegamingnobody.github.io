@@ -11,9 +11,10 @@
     padding: 1rem;
     margin: 1.5rem 0rem 0rem 1rem;
     overflow-x: hidden;
-    position: fixed;
     width: 250px;
+    height: 200px;
     border-radius: 10px;
+    flex: 0 0 250px;
 }
 
 .info h1{
@@ -46,8 +47,8 @@
 
 .mainContent {
     margin: 1rem;
-    margin-left: 300px;
     display: inline-block;
+    flex: 1;
 }
 
 .mainContent span{
@@ -90,7 +91,26 @@
     transition: transform 0.3s ease;
 }
 
+.all{
+    display: flex;
+    gap: 1rem;
+}
 
 body{
     background-color: #252422;
+}
+
+@media (max-width: 768px) {
+    .all {
+        display: block;
+        flex-flow: column wrap;
+    }
+
+    .info {
+        order: 2;
+    }
+
+    .mainContent {
+        order: 1;
+    }
 }
