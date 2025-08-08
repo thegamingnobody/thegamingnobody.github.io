@@ -3,40 +3,38 @@
     padding: 0;
     box-sizing: border-box;
     color: #ccc5b9;
-}
-
-.sidebar {
-    background: #403d39;
-    padding: 1rem;
-    margin: 1rem;
-    overflow-x: hidden;
-    position: fixed;
     font-family: sans-serif;
 }
 
-.sidebar ul{
-    list-style-type: none;
+.info {
+    background: #403d39;
+    padding: 1rem;
+    margin: 1rem 0rem 0rem 1rem;
+    overflow-x: hidden;
+    position: fixed;
+    width: 250px;
+    border-radius: 10px;
 }
 
-.sidebar h1{
+.info h1{
     margin-bottom: 1rem;
 }
 
-.sidebar h3{
+.info h3{
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.sidebar span{
+.info span{
     margin-left: 0.5rem;
 }
 
-.sidebar hr{
+.info hr{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.sidebar .badge{
+.info .badge{
     background-color: #252422;
     padding: 0.25rem 0.5rem;
     font-size: 1.5rem;
@@ -46,8 +44,33 @@
     border-radius: 999px;
 }
 
-.content {
+.mainContent {
     margin: 1rem;
+    margin-left: 300px;
+    display: inline-block;
+}
+
+.mainContent span{
+    margin-left: 0.5rem;
+}
+
+.mainContent .project{
+    background-color: aqua;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10px;
+    display: block;
+}
+
+.mainContent ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.mainContent li {
+    display: inline-block;
+    vertical-align: center;
+    gap: 0.1rem;
 }
 
 body{
