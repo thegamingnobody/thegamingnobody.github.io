@@ -9,7 +9,7 @@
 .info {
     background: #403d39;
     padding: 1rem;
-    margin: 1rem 0rem 0rem 1rem;
+    margin: 1.5rem 0rem 0rem 1rem;
     overflow-x: hidden;
     position: fixed;
     width: 250px;
@@ -55,16 +55,11 @@
 }
 
 .mainContent .project{
-    background-color: aqua;
+    background-color: #403d39;
     width: 25rem;
     height: 25rem;
     border-radius: 10px;
-    display: block;
-}
-
-.mainContent ul{
-    list-style-type: none;
-    text-align: left;
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
 }
 
 .mainContent li {
@@ -72,6 +67,29 @@
     vertical-align: center;
     gap: 0.1rem;
 }
+
+.mainContent .project img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.mainContent .project .overlay{
+    opacity: 1;
+}
+
+.mainContent .project{
+    padding: 1rem;
+
+}
+
+.mainContent .project:hover{
+    opacity: 1;
+    transform: translateY(-8px); /* the whole card moves */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* add depth */
+    transition: transform 0.3s ease;
+}
+
 
 body{
     background-color: #252422;
