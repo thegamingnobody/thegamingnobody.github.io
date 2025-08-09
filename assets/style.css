@@ -120,5 +120,9 @@ body{
 
     .mainContent .project{
     width: 20rem;
+    }
+
+    .mainContent .project a{
+    font-size: 3rem;
 }
 }
