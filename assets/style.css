@@ -117,4 +117,8 @@ body{
     .mainContent {
         order: 1;
     }
+
+    .mainContent .project{
+    width: 20rem;
+}
 }
