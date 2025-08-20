@@ -11,10 +11,10 @@
     padding: 1rem;
     margin: 1.5rem 0rem 0rem 1rem;
     overflow-x: hidden;
-    width: 250px;
-    height: 200px;
+    overflow-y: hidden;
+    /* height: 600px; */
     border-radius: 10px;
-    flex: 0 0 250px;
+    display: inline-block;
 }
 
 .info h1{
@@ -45,6 +45,50 @@
     border-radius: 999px;
 }
 
+.bullet_hollow {
+    list-style-type: circle;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.top_row {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.bottom_row {
+    display: flex;
+    gap: 0.25rem;
+    height: auto;
+}
+
+.left {
+    flex: 0 0 auto;
+    margin-left: 1rem;
+}
+
+.right {
+    flex: 1 1 auto;
+    margin-right: 1rem;
+    width: auto;
+}
+
+.bottom_row .left,
+.right h3{
+    margin-left: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.bottom_row .left li,
+.right li{
+    margin-left: 1.5rem;
+}
+
 .mainContent {
     margin: 1rem;
     display: inline-block;
@@ -58,14 +102,26 @@
 .mainContent .project{
     background-color: #403d39;
     width: 30rem;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
     margin: 0.5rem 0.5rem 0.5rem 0rem;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    padding: 1rem;
 }
+
+.mainContent ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
 
 .mainContent li {
     display: inline-block;
-    vertical-align: center;
+    vertical-align: top;
     gap: 0.1rem;
 }
 
@@ -79,11 +135,6 @@
     opacity: 1;
 }
 
-.mainContent .project{
-    padding: 1rem;
-
-}
-
 .mainContent .project:hover{
     opacity: 1;
     transform: translateY(-8px); /* the whole card moves */
@@ -95,19 +146,20 @@
     font-size: 2rem;
 }
 
-.all{
-    display: flex;
-    gap: 1rem;
-}
-
 body{
     background-color: #252422;
 }
 
 @media (max-width: 768px) {
-    .all {
+    .container {
         display: block;
-        flex-flow: column wrap;
+        align-items: center;
+        gap: 0.25rem;
+    }   
+
+    .left {
+        margin-left: 1rem;
+
     }
 
     .info {
@@ -124,5 +176,5 @@ body{
 
     .mainContent .project a{
     font-size: 3rem;
-}
+    }
 }
