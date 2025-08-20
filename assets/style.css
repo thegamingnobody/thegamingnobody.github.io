@@ -157,6 +157,18 @@ body{
         gap: 0.25rem;
     }   
 
+    .top_row {
+        display: block;
+    }
+
+    .bottom_row{
+        display: block;
+    }
+
+    .bottom_row .left{
+        margin-left: 1rem;
+    }
+
     .left {
         margin-left: 1rem;
 
