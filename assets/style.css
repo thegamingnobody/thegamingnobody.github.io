@@ -148,6 +148,8 @@
 
 body{
     background-color: #252422;
+    margin: 1rem;
+    
 }
 
 @media (max-width: 768px) {
