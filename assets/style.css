@@ -59,6 +59,7 @@
 .top_row {
     display: flex;
     gap: 0.25rem;
+    
 }
 
 .bottom_row {
@@ -75,7 +76,9 @@
 .right {
     flex: 1 1 auto;
     margin-right: 1rem;
-    width: auto;
+    width: 25rem;
+    font-size: 1.25rem;
+    /* word-wrap: break-word; */
 }
 
 .bottom_row .left,
@@ -157,6 +160,7 @@ body{
         display: block;
         align-items: center;
         gap: 0.25rem;
+        align-self: center;
     }   
 
     .top_row {
