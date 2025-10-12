@@ -115,12 +115,12 @@
 }
 
 .mainContent ul {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     gap: 0.5rem;
+    
 }
-
 
 .mainContent li {
     display: inline-block;
@@ -189,6 +189,9 @@ body{
         order: 1;
     }
 
+    .mainContent .project li {
+        display: inline-block;
+    }
     .mainContent .project{
     width: 20rem;
     }
